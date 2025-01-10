@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'SF Pro';
+    src: url('path/to/SFPro.woff2') format('woff2'),
+         url('path/to/SFPro.woff') format('woff');
+}
+
 * {
     font-weight: normal;
     font-family: 'SF Pro', 'Segoe UI', 'Product Sans', 'Open Sans';
