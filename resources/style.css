@@ -1,0 +1,201 @@
+html {
+    min-height: 100%;
+}
+
+* {
+    font-weight: normal;
+    font-family: 'SF Pro', 'Google Sans', 'Segoe UI Variable', 'Roboto', sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+    box-sizing: border-box;
+    font-size: medium;
+    flex-wrap: wrap;
+}
+
+@font-face {
+    font-family: "SF Pro";
+    src: url("/Users/nicholasimmenschuh/Documents/Codecademy Projects/portfolioProject1/resources/fonts/SF Pro.ttf") format("truetype");
+  }
+
+@font-face {
+    font-family: "Google Sans";
+    src: url("/Users/nicholasimmenschuh/Documents/Codecademy Projects/portfolioProject1/resources/fonts/GoogleSans-Regular.ttf") format("truetype");
+  }
+
+@font-face {
+    font-family: "Segoe UI Variable";
+    src: url("/Users/nicholasimmenschuh/Documents/Codecademy Projects/portfolioProject1/resources/fonts/SegoeUI-VF.ttf") format("truetype");
+  }
+
+@font-face {
+    font-family: "Roboto";
+    src: url("/Users/nicholasimmenschuh/Documents/Codecademy Projects/portfolioProject1/resources/fonts/Roboto-VariableFont_wdth,wght.ttf") format("truetype");
+}
+
+
+li {
+    text-align: left;
+    font-size: 200%;
+     
+}
+
+body {
+    background: linear-gradient(180deg, #0077ff, #ffffff);
+}
+
+
+a {
+    background-color: rgba(0, 0, 0, 0.25);
+    padding: 10px 10px;
+    border-radius: 38px;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+article a {
+    background-color: #0077ff00;
+
+}
+
+article a:hover {
+    box-shadow: none;
+    text-shadow: 2px 2px 4px black;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-left a, .nav-right a {
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 38px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: normal;
+    margin: 0px 5px;
+    flex-wrap: wrap;
+}
+
+    a:hover {
+    font-weight: bold;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+    a:active {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+section {
+    justify-items: center;
+    position: flex;
+    justify-content: space-around;
+    
+}
+
+article {
+    position: flex;
+        justify-content: space-around;
+    justify-items: center;
+    padding: 250px;
+    border-radius: 38px;
+}
+
+h2 {
+    margin: 0;
+    font-size: 400%;
+    text-align: center;
+    border-radius: 38px;
+    padding: 10px 20px;
+}
+
+p {
+    font-size: 200%;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+/*  ------footer section------ */  
+
+footer {
+    justify-content: center;
+    position: flex;
+    display: flex;
+    color: #ffffff;
+}
+
+footer small {
+    min-height: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    padding: 5px 10px;
+    border-radius: 38px;
+}
+
+/* ------index page only section------ */
+    #indexPageButton {
+    font-weight: bold;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+/* ------about page onlysection------ */
+    #aboutPageButton {
+    font-weight: bold;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+    .skills {
+        background-color: black;
+        text-align: left;
+        position: relative;
+        border-radius: 38px;
+    }
+
+/* ------projects page only section------ */
+    #projectsPageButton {
+        font-weight: bold;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+/* ------contact page only section------ */
+    #contactPageButton {
+        font-weight: bold;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+    /* Default image size */
+    figure img {
+        position: flex;
+        justify-content: space-around;
+        width: 400px;
+        height: 400px;
+        border-radius: 38px;
+    }
+
+/* Smaller image size for screens smaller than 768px */
+    @media (max-width: 768px) {
+    figure img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+/* Even smaller image size for screens smaller than 480px */
+    @media (max-width: 480px) {
+    figure img {
+        width: 200px;
+        height: 200px;
+        }
+        * {
+            font-size: 90%;
+        }
+    }
+
